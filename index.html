@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="container">
+
+    <h1>Student Registration Form</h1>
+    <h2>Please enter relevent information</h2>
+    <hr>
+    <span class="ml">Mandatory Field<sup>*</sup> </span>
+<form action="">
+    <div class="grid col_2">
+        <div class="clo_left">
+
+                <label for="district">District <span>(Institute District: Where you want to do your course)</span><sup>*</sup></label>
+                <select name="district1" id="district1" required>
+                    <option value="">--Select One--</option>
+                    <option value="">Rajshahi</option>
+                    <option value="">Kushtia</option>
+                    <option value="">Khulna</option>
+                    <option value="">Rangpur</option>
+                    <option value="">Barisal</option>
+                    <option value="">Chittagong</option>
+                </select>
+
+                <label for="course">Course<sup>*</sup></label>
+                <select name="course" id="course" required>
+                    <option value="">--Select One--</option>
+                    <option value="">Web Design & Development</option>
+                    <option value="">Graphic Design</option>
+                    <option value="">Digital Marketing </option>
+                </select>
+
+                <label for="student_name">Student Name <sup>*</sup></label>
+                <input type="text" name="student_name" id="student_name" required>
+        
+                <label for="father_name">Father Name<sup>*</sup></label>
+                <input type="text" name="father_name" id="father_name" required>
+
+                <label for="mother_name">Mother  Name<sup>*</sup></label>
+                <input type="text" name="mother_name" id="mother_name" required>
+
+                <fieldset>
+                    <legend>Date of Birth*</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="day">Day:</label>
+                                <select  id="day" required>
+                                    <option value="">--Select One--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                </select>
+                            </td>
+                            <td>
+                                <label for="month">Month:</label>
+                                <select  id="month" required>
+                                    <option value="">--Select One--</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                </select>
+                            </td>
+                            <td>
+                                <label for="year">Year:</label>
+                                <select  id="year" required>
+                                    <option value="">--Select One--</option>
+                                    <option value="">2015</option>
+                                    <option value="">2016</option>
+                                    <option value="">2017</option>
+                                    <option value="">2018</option>
+                                    <option value="">2019</option>
+                                    <option value="">2020</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+            <label for="gender">Gender<sup>*</sup></label>
+            <input type="radio" name="gender" id="male" required>Male
+            <input type="radio" name="gender" id="female" required>Female
+            <br>
+            <label for="physically_handicapped">Physically Handicapped<sup>*</sup></label>
+            <input type="radio" name="physically_handicapped" id="yes" required>Yes
+            <input type="radio" name="physically_handicapped" id="no" required>No
+            <br>
+
+            <label for="email">Email <sup>*</sup></label>
+            <input type="email" name="email" id="email" required>
+            <span>(e.g: example@mail.com)</span>
+            <br>
+
+            <label for="phone">Phone <span>(Must be 11 Digits)</span> <sup>*</sup></label>
+            <input type="text" name="phone" id="phone" required>
+            <span>(e.g:0155123456)</span>
+
+        </div>
+
+
+<!-- ------------------- -----------------------------col_right ---------------- ------------------- -->
+
+        <div class="col_right">
+            <label for="
+            identification_type">
+                Identification Type<sup>*</sup></label>
+
+                <select name="district1" id="district1" required>
+                    <option value="">--Select One--</option>
+                    <option value="">Birth Certificate No</option>
+                    <option value="">National ID</option>
+                </select>
+                <span>Identification No. (Must be 10 digits for new NID or 17 digits for old NID. If your National ID is 13 digits, then please add your birth year with the ID as prefix. Example: 1980XXXXXXXXXXXXX)<sup>*</sup></span>
+
+                <label for="district">Home District<sup>*</sup></label>
+                <select name="district1" id="district1" required>
+                    <option value="">--Select One--</option>
+                    <option value="">Rajshahi</option>
+                    <option value="">Kushtia</option>
+                    <option value="">Khulna</option>
+                    <option value="">Rangpur</option>
+                    <option value="">Barisal</option>
+                    <option value="">Chittagong</option>
+                </select>
+
+                <label for="upazila">Upazila <sup>*</sup></label>
+                <select name="upazila" id="district1" required>
+                    <option value="">--Select One--</option>
+                    <option value="">Bheramara </option>
+                    <option value="">Kumarkhali</option>
+                    <option value="">Mirpur</option>
+                    <option value="">khoksa</option>
+                    <option value="">Shekhpara</option>
+                    <option value="">Daulatpur</option>
+                </select>
+
+                <label for="village">Village/House No./Road No./Other Alternative <sup>*</sup></label>
+                <input type="text" name="village" id="village" required>
+
+                <label for="post_ffice">Post Office <sup>*</sup></label>
+                <input type="text" name="post_ffice" id="post_ffice" required>
+
+
+                <label for="educational_qualification"> Educational Qualification<sup>*</sup></label>
+                <select name="educational_qualification" id="educational_qualification" required>
+                    <option value="">--Select One--</option>
+                    <option value="">Higher Secondary/Equivalent</option>
+                    <option value="">Bachelor</option>
+                    <option value="">Master</option>
+                    <option value="">Phd</option>
+                </select>
+
+                <br>
+                <label for="have_any_computer">Have any computer?<sup>*</sup></label>
+                <input type="radio" name="have_any_computer" id="yes" required>Yes
+                <input type="radio" name="have_any_computer" id="no" required>No
+                <br>
+
+                <label for="photograph">Photograph <sup>*</sup></label>
+                <input type="file" name="photograph" id="photograph" required><br>
+                <span>(File type must be jpg or jpeg or png. Maximum file size 2 mb.)</span><br>
+
+                <label for="signature">Signature <sup>*</sup></label>
+                <input type="file" name="signature" id="signature" required><br>
+                <span>(File type must be jpg or jpeg or png. Maximum file size 2 mb.)</span><br>
+
+                <input type="submit" value="Submit Data" id="submit_data">
+        </div>
+    
+    </div>
+</form>
+
+</div>
+    
+</body>
+</html>

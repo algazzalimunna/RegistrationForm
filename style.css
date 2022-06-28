@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: aliceblue;
+    margin-bottom: 25px;
+}
+h1{
+    font-size: 24px;
+    padding: 25px 20px 10px 20px;
+    color: orange;
+    border-bottom:1px solid rgb(205, 201, 201) ;
+}
+h2{
+    font-size: 18px;
+    padding: 20px 10px 10px 20px;
+    color: rgb(49, 48, 48);
+    display: inline-block;
+
+}
+
+hr{
+    display: inline-block;
+    width: 64%;
+    outline: none;
+    border-top: 2.2px dotted  rgb(205, 201, 201);
+}
+.ml{
+    display: block;
+    padding: 0 20px;
+}
+.grid{
+    display: grid;
+    gap: 100px;
+    padding:20px 10px 10px 20px ;
+    background-color: bisque;
+}
+.col_2{
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+span{
+    font-size: 10px;
+}
+
+
+/*------------------------ col_left------------------ */
+
+#district1,#course,#educational_qualification{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+#student_name,#father_name,#mother_name,#village,#post_ffice,#email,#phone{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+table{
+    width: 100%;
+}
+td{
+    width: 32%;
+}
+#year,#day,#month{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+fieldset{
+    padding: 6px;
+}
+
+
+/*------------------------ col_right------------------ */
+
+.col_right{
+    border-left: 1px solid rgb(205, 201, 201);
+    padding:20px 10px 10px 20px ;
+}
+#submit_data{
+    margin: 20px 0;
+    padding: 5px;
+    box-shadow: 0 1px 3px 0px black;
+}
+
+
+/*------------------------ responsive------------------ */
+
+
+@media only screen and (max-width: 600px) {
+    .col_2{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    h1{
+        font-size: 18px;
+        padding: 20px 15px 5px 15px;
+    }
+    h2{
+        font-size: 14px;
+        padding: 15px 6px 6px 15px;
+    }
+    .container{
+        width: 95%;
+    }
+    .col_right{
+        border: none;
+        padding:0 ;
+    }
+    label{
+        font-size: 16px;
+    }
+    hr{
+        display:none;
+    }
+    .grid{
+        gap: 50px;
+        padding:10px 10px 10px 15px ;
+    }
+    .ml{
+        padding: 0 15px;
+    }
+  }
